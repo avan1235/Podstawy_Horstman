@@ -20,4 +20,14 @@ public class Manager extends Employee {
     public void setBonus(double bonus){
         this.bonus = bonus;
     }
+    /*
+    Method toString will be called when
+    Manager m = new Manager();
+    String aboutManager = "Brief history of + m.getName + ": " + m;
+     */
+
+    public String toString(){
+        return super.toString() +
+                "[bonus=" + this.bonus + "]";
+    }
 }

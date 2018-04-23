@@ -1,5 +1,8 @@
-package klasy.dziedziczenie;
+package klasy.ArrayList;
 
+/**
+ * Created by Maciej Procyk on 23.04.2018.
+ */
 import java.time.*;
 
 /**
