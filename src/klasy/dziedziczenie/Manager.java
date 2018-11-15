@@ -23,7 +23,7 @@ public class Manager extends Employee {
     /*
     Method toString will be called when
     Manager m = new Manager();
-    String aboutManager = "Brief history of + m.getName + ": " + m;
+    *@return String about Manager
      */
 
     public String toString(){

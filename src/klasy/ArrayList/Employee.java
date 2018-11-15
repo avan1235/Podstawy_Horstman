@@ -12,11 +12,11 @@ public class Employee {
     private String name;
     private double salary;
     private LocalDate hireDay;
-    private static int nextIdNumber = 0;
+    private static int nextIdNumber = 0;    // wartość niezależna od tego, który obiekt utworzymy
     private int idNumber;
 
     {
-        idNumber = nextIdNumber;
+        idNumber = nextIdNumber; // jedynie inkrementujemy wartosc nextIdNumber przy każdym utworzeniu obiektu
         nextIdNumber++;
     }
 
@@ -38,6 +38,10 @@ public class Employee {
         return hireDay;
     }
 
+    /*
+    * @param byPercent wartość określająca, o ile procent podwyższamy pracownikowi pensję
+    * @return void
+     */
     public void raiseSalary(double byPercent) {
         double raise = this.salary * byPercent / 100;
         this.salary += raise;
@@ -47,6 +51,9 @@ public class Employee {
         return this.idNumber;
     }
 
+    /*
+     *@preturn obiekt String opisujący danego pracownika
+     */
     public String toString() {
         return this.getClass().getName() +
                 "[name=" + this.name +
